@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <link rel="stylesheet" type="text/css" href="Homepage.css">
+</head>
+<body>
+    <form class="form" onsubmit="return auth();">
+        <h1>Login</h1>
+        <div class="fields">
+        <label>Username</label>
+        <input type="email" name="email" id="email" class="box" placeholder="Enter Username">
+        <label>Password</label>
+        <input type="password" name="password" id="password" class="box" placeholder="Enter Password"><br>
+        <button type="submit" class="btn">Login</button>
+        </div>
+    </form>
+
+    <script>
+        function auth(){
+            var username = document.getElementById("email").value;
+            var password = document.getElementById("password").value;
+
+            if(username === "carataojoegie@gmail.com" && password === "12345"){
+                window.location.href = "index.html";
+                alert("Login Succesful")
+                return false; // Prevent form submission
+            } else {
+                alert("Invalid credentials");
+                return false; // Prevent form submission
+            }
+        }
+    </script>
+</body>
+</html>

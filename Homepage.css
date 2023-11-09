@@ -1,0 +1,60 @@
+body{
+    background-image: url(back.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-family: sans-serif;
+}
+.form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    background-color: black;
+    border-radius: 10px;
+    opacity: .8;
+}
+.form h1{
+    text-align: center;
+    padding: 0 0 20px 0;
+    border-bottom: 2px solid silver;
+    color: white;
+}
+.fields{
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+.box {
+    position: relative;
+    border-bottom: 2px solid #adadad;
+    margin: 20px 0;
+}
+input.box{
+    width: 100%;
+    padding: 0 5px;
+    height: 40px;
+    font-size: 16px;
+    border: none;
+    background: grey;
+    outline: none;
+    border-radius: 10px;
+}
+input.box::placeholder{
+    color: black;
+}
+label{
+    color: white;
+    position: absolute;
+}
+button.btn{
+    position: relative;
+    left: 35%;
+    width: 25%;
+    margin: 10px;
+    background: lightgrey;
+    border-radius: 10px;
+}
